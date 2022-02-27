@@ -1,21 +1,21 @@
 package com.dio.estruturaDados.fila;
 
-public class No {
+public class No<T> {
 
-    private Object object;
-    private No refNo;
-    public No(Object object){
+    private T object;
+    private No<T> refNo;
+    public No(T object){
         this.refNo = null;
         this.object = object;
     }
     public No(){
     }
 
-    public Object getObject() {
+    public T getObject() {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
